@@ -1,0 +1,118 @@
+[gd_scene load_steps=4 format=3 uid="uid://dytwsvufsik5j"]
+
+[ext_resource type="FontFile" uid="uid://be5h030knmncn" path="res://assets/font/kenvector_future.ttf" id="1_0q1di"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_ur7x4"]
+[ext_resource type="AudioStream" uid="uid://m8ukdilheo6l" path="res://assets/audio/UI Audio/click1.ogg" id="3_li432"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ur7x4")
+
+[node name="WaveCountdown" type="RichTextLabel" parent="."]
+layout_mode = 1
+offset_left = 14.0
+offset_top = 12.0
+offset_right = 714.0
+offset_bottom = 78.0
+theme_override_fonts/normal_font = ExtResource("1_0q1di")
+theme_override_font_sizes/normal_font_size = 40
+text = "999 seconds left"
+
+[node name="UpgradeSelection" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="UpgradeSelection"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 431.0
+offset_top = 130.0
+offset_right = 681.0
+offset_bottom = 570.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_0q1di")
+theme_override_font_sizes/font_size = 20
+text = "Incrase damage"
+
+[node name="Button2" type="Button" parent="UpgradeSelection"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 98.0
+offset_top = 130.0
+offset_right = 348.0
+offset_bottom = 570.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_0q1di")
+theme_override_font_sizes/font_size = 20
+text = "Increase Fire
+ Rate
+"
+
+[node name="Button3" type="Button" parent="UpgradeSelection"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 764.0
+offset_top = 130.0
+offset_right = 1014.0
+offset_bottom = 570.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_0q1di")
+theme_override_font_sizes/font_size = 20
+text = "Get Ring"
+
+[node name="Text" type="RichTextLabel" parent="UpgradeSelection"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 244.0
+offset_top = 24.0
+offset_right = 868.0
+offset_bottom = 122.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_0q1di")
+theme_override_font_sizes/normal_font_size = 50
+text = "Select a upgrade."
+scroll_active = false
+autowrap_mode = 0
+
+[node name="Health" type="Label" parent="."]
+texture_filter = 4
+layout_mode = 0
+offset_left = 954.0
+offset_top = 14.0
+offset_right = 1139.0
+offset_bottom = 97.0
+theme_override_font_sizes/font_size = 60
+text = "❤️❤️"
+horizontal_alignment = 2
+
+[node name="Click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_li432")
+volume_db = 20.0
+
+[connection signal="pressed" from="UpgradeSelection/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="UpgradeSelection/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="UpgradeSelection/Button3" to="." method="_on_button_3_pressed"]

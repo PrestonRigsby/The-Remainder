@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://4q87ap111hf1"
+path="res://.godot/imported/phaseJump5.ogg-f8d310d365df9e9e639ba54f1a88047d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Game Audio/phaseJump5.ogg"
+dest_files=["res://.godot/imported/phaseJump5.ogg-f8d310d365df9e9e639ba54f1a88047d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

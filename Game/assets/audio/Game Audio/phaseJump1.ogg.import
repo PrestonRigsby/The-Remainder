@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://blsibrhcaisxt"
+path="res://.godot/imported/phaseJump1.ogg-4952d2220adc01f392eed96af6c16654.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Game Audio/phaseJump1.ogg"
+dest_files=["res://.godot/imported/phaseJump1.ogg-4952d2220adc01f392eed96af6c16654.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

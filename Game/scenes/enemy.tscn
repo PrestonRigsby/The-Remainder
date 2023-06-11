@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8ckshtvrwf7v"]
+
+[ext_resource type="Texture2D" uid="uid://dsvkaruihcvkt" path="res://assets/textures/Shooter Pack/PNG/Zombie 1/zoimbie1_hold.png" id="1_ev6vi"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_u7u1w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m8vsl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ev6vi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21aej"]
+radius = 18.0
+height = 46.0
+
+[node name="Enemy" type="Area2D"]
+collision_mask = 14
+script = ExtResource("1_u7u1w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m8vsl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_21aej")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

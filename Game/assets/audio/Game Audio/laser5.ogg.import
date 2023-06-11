@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c58x2oqp25jl"
+path="res://.godot/imported/laser5.ogg-8d7a49c7eb1ac8ef1f1482b45a805407.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Game Audio/laser5.ogg"
+dest_files=["res://.godot/imported/laser5.ogg-8d7a49c7eb1ac8ef1f1482b45a805407.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

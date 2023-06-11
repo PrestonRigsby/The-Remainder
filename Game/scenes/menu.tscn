@@ -1,0 +1,113 @@
+[gd_scene load_steps=5 format=3 uid="uid://dm7bp08vnuqvf"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_105cj"]
+[ext_resource type="FontFile" uid="uid://be5h030knmncn" path="res://assets/font/kenvector_future.ttf" id="2_7dk00"]
+[ext_resource type="Texture2D" uid="uid://ynuwhsf3oyoa" path="res://icon.svg" id="3_4i1ff"]
+[ext_resource type="AudioStream" uid="uid://m8ukdilheo6l" path="res://assets/audio/UI Audio/click1.ogg" id="4_tdawx"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_105cj")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -485.0
+offset_top = -207.0
+offset_right = 486.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_7dk00")
+theme_override_font_sizes/font_size = 70
+text = "The remainder"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -485.0
+offset_top = -324.0
+offset_right = 486.0
+offset_bottom = -185.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_7dk00")
+theme_override_font_sizes/font_size = 20
+text = "Preston Rigsby for the GameDev.tv game jam presents:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -251.0
+offset_top = 7.0
+offset_right = 251.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_7dk00")
+theme_override_font_sizes/font_size = 60
+text = "PLAY"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = 154.0
+offset_right = 159.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_7dk00")
+theme_override_font_sizes/font_size = 40
+text = "QUIT"
+
+[node name="ToggleFullscreen" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = -84.0
+offset_right = 317.0
+offset_bottom = -16.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_7dk00")
+theme_override_font_sizes/font_size = 30
+text = "Fullscreen"
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(1062, 564)
+texture = ExtResource("3_4i1ff")
+
+[node name="Click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_tdawx")
+volume_db = 20.0
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="toggled" from="ToggleFullscreen" to="." method="_on_toggle_fullscreen_toggled"]

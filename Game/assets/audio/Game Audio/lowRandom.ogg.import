@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dsa6s13vrg275"
+path="res://.godot/imported/lowRandom.ogg-2ec30d7e10d2446e4227910d5efd3b5d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Game Audio/lowRandom.ogg"
+dest_files=["res://.godot/imported/lowRandom.ogg-2ec30d7e10d2446e4227910d5efd3b5d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5u2mnoq13jto"
+path="res://.godot/imported/twoTone2.ogg-8c37cf8be7fb0fd557ed52530dbb43da.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Game Audio/twoTone2.ogg"
+dest_files=["res://.godot/imported/twoTone2.ogg-8c37cf8be7fb0fd557ed52530dbb43da.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fchffwi25x8m"
+path="res://.godot/imported/spaceTrash5.ogg-725c084f9960c6ee2b84c0c0689586b1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Game Audio/spaceTrash5.ogg"
+dest_files=["res://.godot/imported/spaceTrash5.ogg-725c084f9960c6ee2b84c0c0689586b1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
